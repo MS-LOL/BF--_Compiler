@@ -1,0 +1,18 @@
+label(Main)
+dpinc(3)
+inc(3)
+dpdec(1)
+inc(2)
+dpdec(1)
+inc(1)
+endlabel
+
+label(Add) //adds the number from the next byte above into the one currently pointing at, making the second one zero in the process
+dpinc(1)
+loop
+dec(1)
+dpdec(1)
+inc(1)
+endloop
+dpdec(1)
+endlabel

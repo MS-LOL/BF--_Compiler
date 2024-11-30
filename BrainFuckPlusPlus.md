@@ -96,3 +96,7 @@ Despite the fact that inputs and outputs exist, printing whole lines of text is 
 
 To be honest, I kind of wrote this on a whim while I was trying to setup a programming and design environment on an old HP laptop I just installed Ubuntu on.
 I might need to learn a lot more about programming so that I can actually make this language make sense.
+
+Warning! Indentation breaks the compiler because I'm a fucking dumbass who forgot to implement removing whitespaces from whole blocks of code.
+
+Or maybe it does work because it's sorted later on and I'm just tired from all this programming thats a whole fucking mess.
