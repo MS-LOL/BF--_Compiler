@@ -35,6 +35,20 @@ OutputFile = open(OutputFileName, "x")
 OutputFileCache = ""
 LineNumber = int(1)
 
+"""
+I plan on putting a section here that copies snippets/labels into the code.
+
+This is so that the same code can be referenced in multiple places in the program.
+
+Kinda like a function except you can't do branch instructions.
+
+You can call snippets within snippets.
+
+I guess keyword is label(Init), endlabel and copylabel(Init)
+
+WARNING! DO NOT RECURSIVELY CALL SNIPPETS(MAKE 2 OR MORE SNIPPETS REFERENCE EACH OTHER OR MAKE 1 SNIPPET REFERENCE ITSELF)! BRAINFUCK++ AND BRAINFUCK DOES NOT SUPPORT BRANCH INSTRUCTIONS! THE COMPILER WILL GET STUCK!
+"""
+
 for line in InputFile:
     line = line.strip() # Remove leading/trailing whitespace
     
