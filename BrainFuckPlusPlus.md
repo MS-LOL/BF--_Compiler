@@ -1,10 +1,10 @@
-# A quick introductory guide to the pseudocode of BrainFuck++
+# A quick introductory guide to the pseudocode of BrainFuck++ v1
 
 BrainFuck++ is a pseudocode programming language that was given an actual compiler/translator that converts BrainFuck++ into BrainFuck
 The current version of BrainFuck++ will be referred to as v1.
 BrainFuck++ is still in development as the for loop statements are a bit "BrainFucked".
 
-The main purpose for BrainFuck++ is to prevent programmers from spending hours copy and pasting the same exact character 100 times. The limitations of the BrainFuck programming language still apply.
+The main purpose for BrainFuck++ is to prevent programmers from spending hours copy and pasting the same exact character 100 times. The limitations of the BrainFuck programming language still apply. Whether you use these tools yourself is up to your own discretion.
 
 ## All keywords used in BrainFuck++
 

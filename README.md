@@ -15,3 +15,7 @@ The Following program takes an input of a file that has the file extension of .b
 
 When using the text editor Notepad++, you can import the UDL by navigating to Language/User Defined Language/Define your language... and then pressing Import and selecting the File provided.
 If the UDL isn't automatically loading, try restarting Notepad++ and your file should be highlighted. If not, Go into Languages and select the BF++ UDL.
+
+A guide on the BrainFuck++ Programming language can be found [here](BrainFuckPlusPlus.md)
+
+I chose the CC0 License for my project because my code is for the people, they are meant to be stolen.
