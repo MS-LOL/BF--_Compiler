@@ -1,16 +1,19 @@
-print(r""" _______  ________                         ______                                 __ __                   
-|       \|        \   __       __         /      \                               |  \  \                  
-| ▓▓▓▓▓▓▓\ ▓▓▓▓▓▓▓▓  |  \     |  \       |  ▓▓▓▓▓▓\ ______  ______ ____   ______  \▓▓ ▓▓ ______   ______  
-| ▓▓__/ ▓▓ ▓▓__    __| ▓▓__ __| ▓▓__     | ▓▓   \▓▓/      \|      \    \ /      \|  \ ▓▓/      \ /      \ 
-| ▓▓    ▓▓ ▓▓  \  |    ▓▓  \    ▓▓  \    | ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓\▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓ ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\
-| ▓▓▓▓▓▓▓\ ▓▓▓▓▓   \▓▓▓▓▓▓▓▓\▓▓▓▓▓▓▓▓    | ▓▓   __| ▓▓  | ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓ ▓▓ ▓▓    ▓▓ ▓▓   \▓▓
-| ▓▓__/ ▓▓ ▓▓        | ▓▓     | ▓▓       | ▓▓__/  \ ▓▓__/ ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓__/ ▓▓ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓ ▓▓      
-| ▓▓    ▓▓ ▓▓         \▓▓      \▓▓        \▓▓    ▓▓\▓▓    ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓    ▓▓ ▓▓ ▓▓\▓▓     \ ▓▓      
- \▓▓▓▓▓▓▓ \▓▓                              \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓  \▓▓  \▓▓ ▓▓▓▓▓▓▓ \▓▓\▓▓ \▓▓▓▓▓▓▓\▓▓      
-                                                                        | ▓▓                              
-                                                                        | ▓▓                              
-                                                                         \▓▓                              
+print(r""" _______  ________                     ______                                 __ __                   
+|       \|        \                   /      \                               |  \  \                  
+| ▓▓▓▓▓▓▓\ ▓▓▓▓▓▓▓▓                  |  ▓▓▓▓▓▓\ ______  ______ ____   ______  \▓▓ ▓▓ ______   ______  
+| ▓▓__/ ▓▓ ▓▓__    ______ ______     | ▓▓   \▓▓/      \|      \    \ /      \|  \ ▓▓/      \ /      \ 
+| ▓▓    ▓▓ ▓▓  \  |      \      \    | ▓▓     |  ▓▓▓▓▓▓\ ▓▓▓▓▓▓\▓▓▓▓\  ▓▓▓▓▓▓\ ▓▓ ▓▓  ▓▓▓▓▓▓\  ▓▓▓▓▓▓\
+| ▓▓▓▓▓▓▓\ ▓▓▓▓▓   \▓▓▓▓▓▓\▓▓▓▓▓▓    | ▓▓   __| ▓▓  | ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓  | ▓▓ ▓▓ ▓▓ ▓▓    ▓▓ ▓▓   \▓▓
+| ▓▓__/ ▓▓ ▓▓                        | ▓▓__/  \ ▓▓__/ ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓__/ ▓▓ ▓▓ ▓▓ ▓▓▓▓▓▓▓▓ ▓▓      
+| ▓▓    ▓▓ ▓▓                         \▓▓    ▓▓\▓▓    ▓▓ ▓▓ | ▓▓ | ▓▓ ▓▓    ▓▓ ▓▓ ▓▓\▓▓     \ ▓▓      
+ \▓▓▓▓▓▓▓ \▓▓                          \▓▓▓▓▓▓  \▓▓▓▓▓▓ \▓▓  \▓▓  \▓▓ ▓▓▓▓▓▓▓ \▓▓\▓▓ \▓▓▓▓▓▓▓\▓▓      
+                                                                    | ▓▓                              
+                                                                    | ▓▓                              
+                                                                     \▓▓                              
 """)
+
+# To whoever decided to look at this code, I sincerely apologise for what you are about to see.
+
 
 # Output Filename
 print("Input the Filename with the extension that you wish to convert to BrainFuck")
@@ -47,6 +50,7 @@ InputFile.close()
 InputFile2 = open(InputFileName, "r")
 OutputFileCache = ""
 LinkedFileCache = """"""
+# Close a file and open a new instance of it. I really hate myself for doing this.
 
 # Prepare a Dictionary for the labels I guess
 Labels = {}
@@ -67,7 +71,7 @@ I guess keyword is label(Init), endlabel and copylabel(Init)
 
 Do the labels actually get included in the program or are they removed from their original positon in the source code?
 
-WARNING! DO NOT RECURSIVELY CALL SNIPPETS(MAKE 2 OR MORE SNIPPETS REFERENCE EACH OTHER OR MAKE 1 SNIPPET REFERENCE ITSELF)! BRAINFUCK++ AND BRAINFUCK DOES NOT SUPPORT BRANCH INSTRUCTIONS! THE COMPILER WILL GET STUCK!
+WARNING! DO NOT RECURSIVELY CALL SNIPPETS(MAKE 2 OR MORE SNIPPETS REFERENCE EACH OTHER OR MAKE 1 SNIPPET REFERENCE ITSELF)! BRAINFUCK-- AND BRAINFUCK DOES NOT SUPPORT BRANCH INSTRUCTIONS! THE COMPILER WILL GET STUCK!
 """
 
 # Label handling code
@@ -76,16 +80,20 @@ for line in InputFile2:
 
     if line.startswith("label"): # Next couple lines until corresponding "endlabel" are part of label
         # Get indexes of brackets in the line
+        
         OpenBracket = line.index("(")
         CloseBracket = line.index(")")
+        
         # Get the name inside the brackets as a string
+        
         LabelName = str(line[OpenBracket + 1:CloseBracket])
+        
         # Get the indexes of the label(labelnamehere) and endlabel keywords in the whole file
+        
         StartLabelIndex = InputFileCache.find("label(" + LabelName + ")")
         EndLabelIndex = InputFileCache.find("endlabel", StartLabelIndex)
         LabelBody = InputFileCache[StartLabelIndex + len(line) + 1:EndLabelIndex - 1]
         Label = InputFileCache[StartLabelIndex:EndLabelIndex + InputFile.readline(LineNumber)]
-        # It does indeed appear that Fucked = bool(True)
         print(LabelBody)
         Labels[LabelName] = LabelBody
         if LabelName == "Main": #Main program, don't remove
@@ -114,7 +122,7 @@ for line in LinkedFileCache:
         OpenBracket = line.index("(")
         CloseBracket = line.index(")")
         Number = int(line[OpenBracket + 1:CloseBracket])  # Extract number
-        OutputFileCache += "+" * Number  # Repeat '+' number times)
+        OutputFileCache += "+" * Number  # Repeat '+' number times
         
     elif line.startswith("dec") and line.startswith("dpdec") == False:
         OpenBracket = line.index("(")
@@ -139,7 +147,7 @@ for line in LinkedFileCache:
         # Please just look away.
         continue
     else:
-        # The code is fucked somehow.
+        # The code is somehow more broken than it already is.
         # Prints an error code, line number, and the line then exit the program.
         print("Fatal SyntaxError at line ", LineNumber, " in file ", InputFileName)
         print(line)

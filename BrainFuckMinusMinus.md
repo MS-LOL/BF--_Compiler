@@ -1,34 +1,34 @@
-# A quick introductory guide to the pseudocode of BrainFuck++ v1
+# A quick introductory guide to the pseudocode of BrainFuck-- v1
 
-BrainFuck++ is a pseudocode programming language that was given an actual compiler/translator that converts BrainFuck++ into BrainFuck
-The current version of BrainFuck++ will be referred to as v1.
-BrainFuck++ is still in development as the for loop statements are a bit "BrainFucked".
+BrainFuck-- is a pseudocode programming language that was given an actual compiler/translator that converts BrainFuck-- into BrainFuck
+The current version of BrainFuck-- will be referred to as v1. Any previous refernces to Brainfuck++ v1 are refernces to Brainfuck-- v1 
+BrainFuck-- is still in development as the line processing statements are so spagettified that implementing indentation is impossible without a complete overhaul of the code.
 
-The main purpose for BrainFuck++ is to prevent programmers from spending hours copy and pasting the same exact character 100 times. The limitations of the BrainFuck programming language still apply. Whether you use these tools yourself is up to your own discretion.
+The main purpose for BrainFuck-- is to prevent programmers from spending hours copy and pasting the same exact character 100 times. The limitations of the BrainFuck programming language still apply. Whether you use these tools yourself is up to your own discretion.
 
-## All keywords used in BrainFuck++
+## All keywords used in BrainFuck--
 
 ### `dpinc(x)` and `dpdec(x)`
 
 These commands are used to move the data pointer up or down a corresponding amount inside the brackets.
-These are corresponding to `\>` and `<` in BrainFuck.
+These are corresponding to `>` and `<` in BrainFuck.
 
 ```
 dpinc(5)
 dpdec(3)
 ```
-is equivalent to `\>\>\>\>\><<<` in BrainFuck.
+is equivalent to `>>>>><<<` in BrainFuck.
 
 ### `inc(x)` and `dec(x)`
 
 These commands are used to increment or decrement the value in the byte the data pointer is currently pointing to by a specified amount in the brackets.
-This is corresponding to `+` and `\-` in BrainFuck.
+This is corresponding to `+` and `-` in BrainFuck.
 
 ```
 inc(9)
 dec(4)
 ```
-is equivalent to `+++++++++\-\-\-\-` in BrainFuck.
+is equivalent to `+++++++++----` in BrainFuck.
 
 ### `input` and `output`
 
@@ -43,12 +43,12 @@ output
 ```
 is equivalent to `,.` in BrainFuck.
 
-If a user were to input `71` when the program tries to input a value, then the program would output the ASCII character `G`.
+If a user were to input `71` when the above program tries to take an input for a value, then the program would output the ASCII character `G`.
 
 ### `loop` and `endloop`
 
 These commands are used in for loops. Whenever `loop` is used then the program will loop through all the commands inbetween the `loop` and it's corresponding `endloop` command as long as the byte that the data pointer points to is a non-zero value.
-These are corresponding to `\[` and `\]` in BrainFuck.
+These are corresponding to `[` and `]` in BrainFuck.
 
 In other programming languages like C, this would be equivalent to
 ```
@@ -68,7 +68,7 @@ dpdec(1)
 dec(1)
 endloop
 ```
-is equivalent to `+++\[\>+++<-\]` in BrainFuck.
+is equivalent to `+++[>+++<-]` in BrainFuck.
 
 ### Comments like `//` in BrainFuck++
 
@@ -86,17 +86,17 @@ As you may have absolutely noticed, BrainFuck is a programming language that mak
 > For code that is part of the main program loop, even if the main program only runs once, put it in a loop that terminates when the user inputs that they wish to terminate the program or another condition is met \(signalled by a loop byte\).
 > For code that only runs at the end of the program to perform any final cleanups, put it after the main program loop.
 
-By remembering these tips, you can make programming in BrainFuck and BrainFuck++ 1% easier \(a massive productivity boost\).
+By remembering these tips, you can make programming in BrainFuck and BrainFuck-- 1% easier \(a massive productivity boost\).
 
-### BrainFuck and BrainFuck++ have less features than even Assembly
+### BrainFuck and BrainFuck-- have less features than even Assembly
 
-Despite the fact that inputs and outputs exist, printing whole lines of text is annoying as hell. Also, there is no multiplication, division, Bitmasks, or branch instructions. This means that BrainFuck and BrainFuck++ should be considered as a VERY primitive machine code. Any functions have to be implemented everywhere they are used. This means creating Code Snippets. Might explore this in the next BF++ version.
+Despite the fact that inputs and outputs exist, printing whole lines of text is annoying as hell. Also, there is no multiplication, division, bitmasks, or branch instructions implemented by default. This means that BrainFuck and BrainFuck-- should be considered as a VERY primitive machine code. Any functions have to be implemented everywhere they are used. This means creating Code Snippets. Might explore this in the next BF-- version.
 
 ## Final notes
 
 To be honest, I kind of wrote this on a whim while I was trying to setup a programming and design environment on an old HP laptop I just installed Ubuntu on.
 I might need to learn a lot more about programming so that I can actually make this language make sense.
 
-Warning! Indentation breaks the compiler because I'm a fucking dumbass who forgot to implement removing whitespaces from whole blocks of code.
+Warning! Indentation breaks the compiler because I forgot to implement removing whitespaces from whole blocks of code. Apologies in advance to any programmers and my future self.
 
-Or maybe it does work because it's sorted later on and I'm just tired from all this programming thats a whole fucking mess.
+Or maybe it does work because it's sorted later on and I'm just tired from all this programming that would make even Yandere Dev code look holy in contrast to this mess.
