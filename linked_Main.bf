@@ -1,0 +1,10 @@
+dpinc(3)
+inc(3)
+dpinc(1)
+loop
+dec(1)
+dpdec(1)
+inc(1)
+dpinc(1)
+endloop
+dpdec(1)
